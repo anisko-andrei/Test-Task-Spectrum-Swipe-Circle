@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343800972BD5572D003FD8E7 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800962BD5572D003FD8E7 /* BackgroundView.swift */; };
+		3438009B2BD56502003FD8E7 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438009A2BD56502003FD8E7 /* MainMenuView.swift */; };
+		3438009E2BD567D9003FD8E7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438009D2BD567D9003FD8E7 /* Color+Extension.swift */; };
+		343800A32BD57010003FD8E7 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800A22BD57010003FD8E7 /* UIApplication+Extension.swift */; };
+		343800A62BD57158003FD8E7 /* MultiroundPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 343800A52BD57158003FD8E7 /* MultiroundPro.otf */; };
 		34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */; };
-		34F91B5D2BD550F300CD0475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B5C2BD550F300CD0475 /* ContentView.swift */; };
 		34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B5E2BD550F600CD0475 /* Assets.xcassets */; };
 		34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B612BD550F600CD0475 /* Preview Assets.xcassets */; };
+		34F91B6B2BD5538100CD0475 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B6A2BD5538100CD0475 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343800962BD5572D003FD8E7 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		3438009A2BD56502003FD8E7 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		3438009D2BD567D9003FD8E7 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		343800A22BD57010003FD8E7 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		343800A52BD57158003FD8E7 /* MultiroundPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultiroundPro.otf; sourceTree = "<group>"; };
+		343800A72BD571BF003FD8E7 /* Test-Task--Spectrum-Swipe-Circle--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Test-Task--Spectrum-Swipe-Circle--Info.plist"; sourceTree = SOURCE_ROOT; };
 		34F91B572BD550F300CD0475 /* Test Task “Spectrum Swipe Circle”.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Task “Spectrum Swipe Circle”.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumSwipeCircleApp.swift; sourceTree = "<group>"; };
-		34F91B5C2BD550F300CD0475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34F91B5E2BD550F600CD0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34F91B612BD550F600CD0475 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34F91B6A2BD5538100CD0475 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343800942BD55706003FD8E7 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				343800952BD55710003FD8E7 /* BackgroundView */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		343800952BD55710003FD8E7 /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				343800962BD5572D003FD8E7 /* BackgroundView.swift */,
+			);
+			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		343800982BD564E4003FD8E7 /* MainMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				343800992BD564F2003FD8E7 /* View */,
+			);
+			path = MainMenuView;
+			sourceTree = "<group>";
+		};
+		343800992BD564F2003FD8E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3438009A2BD56502003FD8E7 /* MainMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3438009C2BD567C6003FD8E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3438009D2BD567D9003FD8E7 /* Color+Extension.swift */,
+				343800A22BD57010003FD8E7 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		343800A42BD57143003FD8E7 /* AppFont */ = {
+			isa = PBXGroup;
+			children = (
+				343800A52BD57158003FD8E7 /* MultiroundPro.otf */,
+			);
+			path = AppFont;
+			sourceTree = "<group>";
+		};
 		34F91B4E2BD550F300CD0475 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +111,13 @@
 		34F91B592BD550F300CD0475 /* Test Task “Spectrum Swipe Circle” */ = {
 			isa = PBXGroup;
 			children = (
+				343800A72BD571BF003FD8E7 /* Test-Task--Spectrum-Swipe-Circle--Info.plist */,
+				34F91B682BD5535600CD0475 /* SplashView */,
+				343800982BD564E4003FD8E7 /* MainMenuView */,
+				343800942BD55706003FD8E7 /* Subviews */,
+				3438009C2BD567C6003FD8E7 /* Extensions */,
+				343800A42BD57143003FD8E7 /* AppFont */,
 				34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */,
-				34F91B5C2BD550F300CD0475 /* ContentView.swift */,
 				34F91B5E2BD550F600CD0475 /* Assets.xcassets */,
 				34F91B602BD550F600CD0475 /* Preview Content */,
 			);
@@ -65,6 +130,22 @@
 				34F91B612BD550F600CD0475 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34F91B682BD5535600CD0475 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				34F91B692BD5536E00CD0475 /* View */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		34F91B692BD5536E00CD0475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34F91B6A2BD5538100CD0475 /* SplashView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */,
+				343800A62BD57158003FD8E7 /* MultiroundPro.otf in Resources */,
 				34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34F91B5D2BD550F300CD0475 /* ContentView.swift in Sources */,
+				3438009B2BD56502003FD8E7 /* MainMenuView.swift in Sources */,
+				3438009E2BD567D9003FD8E7 /* Color+Extension.swift in Sources */,
+				343800A32BD57010003FD8E7 /* UIApplication+Extension.swift in Sources */,
 				34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */,
+				343800972BD5572D003FD8E7 /* BackgroundView.swift in Sources */,
+				34F91B6B2BD5538100CD0475 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +361,7 @@
 				DEVELOPMENT_TEAM = 268KCE48W3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test-Task--Spectrum-Swipe-Circle--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +391,7 @@
 				DEVELOPMENT_TEAM = 268KCE48W3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test-Task--Spectrum-Swipe-Circle--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
