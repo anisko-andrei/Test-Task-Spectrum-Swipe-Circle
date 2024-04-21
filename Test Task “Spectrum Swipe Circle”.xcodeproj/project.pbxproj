@@ -12,6 +12,9 @@
 		3438009E2BD567D9003FD8E7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438009D2BD567D9003FD8E7 /* Color+Extension.swift */; };
 		343800A32BD57010003FD8E7 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800A22BD57010003FD8E7 /* UIApplication+Extension.swift */; };
 		343800A62BD57158003FD8E7 /* MultiroundPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 343800A52BD57158003FD8E7 /* MultiroundPro.otf */; };
+		343800AB2BD5746D003FD8E7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800AA2BD5746D003FD8E7 /* GameView.swift */; };
+		343800AD2BD581A7003FD8E7 /* Muller-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 343800AC2BD581A7003FD8E7 /* Muller-Medium.ttf */; };
+		343800B12BD593B0003FD8E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800B02BD593B0003FD8E7 /* SettingsView.swift */; };
 		34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */; };
 		34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B5E2BD550F600CD0475 /* Assets.xcassets */; };
 		34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B612BD550F600CD0475 /* Preview Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		343800A22BD57010003FD8E7 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		343800A52BD57158003FD8E7 /* MultiroundPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultiroundPro.otf; sourceTree = "<group>"; };
 		343800A72BD571BF003FD8E7 /* Test-Task--Spectrum-Swipe-Circle--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Test-Task--Spectrum-Swipe-Circle--Info.plist"; sourceTree = SOURCE_ROOT; };
+		343800AA2BD5746D003FD8E7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		343800AC2BD581A7003FD8E7 /* Muller-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muller-Medium.ttf"; sourceTree = "<group>"; };
+		343800B02BD593B0003FD8E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		34F91B572BD550F300CD0475 /* Test Task “Spectrum Swipe Circle”.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Task “Spectrum Swipe Circle”.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumSwipeCircleApp.swift; sourceTree = "<group>"; };
 		34F91B5E2BD550F600CD0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,8 +94,41 @@
 			isa = PBXGroup;
 			children = (
 				343800A52BD57158003FD8E7 /* MultiroundPro.otf */,
+				343800AC2BD581A7003FD8E7 /* Muller-Medium.ttf */,
 			);
 			path = AppFont;
+			sourceTree = "<group>";
+		};
+		343800A82BD57446003FD8E7 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				343800A92BD57456003FD8E7 /* View */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		343800A92BD57456003FD8E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				343800AA2BD5746D003FD8E7 /* GameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		343800AE2BD5938C003FD8E7 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				343800AF2BD5939D003FD8E7 /* View */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		343800AF2BD5939D003FD8E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				343800B02BD593B0003FD8E7 /* SettingsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		34F91B4E2BD550F300CD0475 = {
@@ -114,6 +153,8 @@
 				343800A72BD571BF003FD8E7 /* Test-Task--Spectrum-Swipe-Circle--Info.plist */,
 				34F91B682BD5535600CD0475 /* SplashView */,
 				343800982BD564E4003FD8E7 /* MainMenuView */,
+				343800A82BD57446003FD8E7 /* GameView */,
+				343800AE2BD5938C003FD8E7 /* SettingsView */,
 				343800942BD55706003FD8E7 /* Subviews */,
 				3438009C2BD567C6003FD8E7 /* Extensions */,
 				343800A42BD57143003FD8E7 /* AppFont */,
@@ -209,6 +250,7 @@
 				34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */,
 				343800A62BD57158003FD8E7 /* MultiroundPro.otf in Resources */,
 				34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */,
+				343800AD2BD581A7003FD8E7 /* Muller-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,11 +262,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3438009B2BD56502003FD8E7 /* MainMenuView.swift in Sources */,
+				343800B12BD593B0003FD8E7 /* SettingsView.swift in Sources */,
 				3438009E2BD567D9003FD8E7 /* Color+Extension.swift in Sources */,
 				343800A32BD57010003FD8E7 /* UIApplication+Extension.swift in Sources */,
 				34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */,
 				343800972BD5572D003FD8E7 /* BackgroundView.swift in Sources */,
 				34F91B6B2BD5538100CD0475 /* SplashView.swift in Sources */,
+				343800AB2BD5746D003FD8E7 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +409,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,6 +442,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

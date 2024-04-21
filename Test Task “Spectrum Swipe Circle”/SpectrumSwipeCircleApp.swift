@@ -19,8 +19,9 @@ struct SpectrumSwipeCircleApp: App {
                     MainMenuView()
                 }
             }
-            
+            .statusBar(hidden: true)
         }
+        
     }
     
 }

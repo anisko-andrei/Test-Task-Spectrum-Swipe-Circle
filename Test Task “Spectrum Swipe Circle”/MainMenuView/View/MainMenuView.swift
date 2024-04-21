@@ -3,6 +3,8 @@ import SwiftUI
 import SafariServices
 
 struct MainMenuView: View {
+    @State private var playNow = false
+    
     var body: some View {
         ZStack {
             BackgroundView(bgFor: .menu)
@@ -19,11 +21,14 @@ struct MainMenuView: View {
                 Spacer()
             }
         }
+        .fullScreenCover(isPresented: $playNow, content: {
+            GameView()
+        })
     }
     
     var playNowButton: some View {
         Button(action: {
-            
+            playNow.toggle()
         }, label: {
             Rectangle()
                 .foregroundColor(.clear)
