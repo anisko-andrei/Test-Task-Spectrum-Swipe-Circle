@@ -3,7 +3,8 @@ import SwiftUI
 
 struct GameView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var settingOpen = false
+    @StateObject var vm = GameViewModel()
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack {
@@ -11,25 +12,36 @@ struct GameView: View {
                 
                 settingsButton
                 
+                GameFieldView(vm: vm, proxy: proxy)
+                    .frame(alignment: .center)
                 
-                if settingOpen {
-                    
-                    SettingsView(isPresented: $settingOpen, proxy: proxy) {
+                if vm.settingOpen {
+                    SettingsView(isPresented: $vm.settingOpen, proxy: proxy) {
                         dismiss()
                     }
-                        .frame(alignment: .center)
+                    .frame(alignment: .center)
+                }
+                
+                if vm.youWin {
+                    YouWinView(isPresented: $vm.youWin, currentScore: vm.currentScore, proxy: proxy, dismiss: {
+                        dismiss()
+                    }, startNew: {
+                        vm.startNewGame()
+                    })
+                    .frame(alignment: .center)
                 }
             }
         }
         .statusBar(hidden: true)
-
+        
     }
+    
     var settingsButton: some View {
         VStack {
             HStack {
                 Button(action: {
                     withAnimation(.easeIn(duration: 0.1)) {
-                        settingOpen.toggle()
+                        vm.settingOpen.toggle()
                     }
                     
                 }, label: {
@@ -53,3 +65,4 @@ struct GameView: View {
 #Preview {
     GameView()
 }
+

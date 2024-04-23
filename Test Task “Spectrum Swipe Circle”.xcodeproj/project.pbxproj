@@ -15,6 +15,13 @@
 		343800AB2BD5746D003FD8E7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800AA2BD5746D003FD8E7 /* GameView.swift */; };
 		343800AD2BD581A7003FD8E7 /* Muller-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 343800AC2BD581A7003FD8E7 /* Muller-Medium.ttf */; };
 		343800B12BD593B0003FD8E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343800B02BD593B0003FD8E7 /* SettingsView.swift */; };
+		34E21E172BD826190077B237 /* YouWinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E162BD826190077B237 /* YouWinView.swift */; };
+		34E21E1A2BD855000077B237 /* RubinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E192BD855000077B237 /* RubinModel.swift */; };
+		34E21E1C2BD855300077B237 /* FieldColorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E1B2BD855300077B237 /* FieldColorsModel.swift */; };
+		34E21E1E2BD855530077B237 /* FieldSidesColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E1D2BD855530077B237 /* FieldSidesColorModel.swift */; };
+		34E21E202BD855700077B237 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E1F2BD855700077B237 /* FieldModel.swift */; };
+		34E21E232BD855BE0077B237 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E222BD855BE0077B237 /* GameViewModel.swift */; };
+		34E21E272BD85B4D0077B237 /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E262BD85B4D0077B237 /* GameFieldView.swift */; };
 		34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */; };
 		34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B5E2BD550F600CD0475 /* Assets.xcassets */; };
 		34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B612BD550F600CD0475 /* Preview Assets.xcassets */; };
@@ -31,6 +38,13 @@
 		343800AA2BD5746D003FD8E7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		343800AC2BD581A7003FD8E7 /* Muller-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muller-Medium.ttf"; sourceTree = "<group>"; };
 		343800B02BD593B0003FD8E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		34E21E162BD826190077B237 /* YouWinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouWinView.swift; sourceTree = "<group>"; };
+		34E21E192BD855000077B237 /* RubinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubinModel.swift; sourceTree = "<group>"; };
+		34E21E1B2BD855300077B237 /* FieldColorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldColorsModel.swift; sourceTree = "<group>"; };
+		34E21E1D2BD855530077B237 /* FieldSidesColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSidesColorModel.swift; sourceTree = "<group>"; };
+		34E21E1F2BD855700077B237 /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
+		34E21E222BD855BE0077B237 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		34E21E262BD85B4D0077B237 /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
 		34F91B572BD550F300CD0475 /* Test Task “Spectrum Swipe Circle”.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Task “Spectrum Swipe Circle”.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumSwipeCircleApp.swift; sourceTree = "<group>"; };
 		34F91B5E2BD550F600CD0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +116,8 @@
 		343800A82BD57446003FD8E7 /* GameView */ = {
 			isa = PBXGroup;
 			children = (
+				34E21E212BD855A80077B237 /* ViewModel */,
+				34E21E182BD854E60077B237 /* Model */,
 				343800A92BD57456003FD8E7 /* View */,
 			);
 			path = GameView;
@@ -131,6 +147,57 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		34E21E142BD825FD0077B237 /* YouWinView */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E152BD826080077B237 /* View */,
+			);
+			path = YouWinView;
+			sourceTree = "<group>";
+		};
+		34E21E152BD826080077B237 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E162BD826190077B237 /* YouWinView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34E21E182BD854E60077B237 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E192BD855000077B237 /* RubinModel.swift */,
+				34E21E1B2BD855300077B237 /* FieldColorsModel.swift */,
+				34E21E1D2BD855530077B237 /* FieldSidesColorModel.swift */,
+				34E21E1F2BD855700077B237 /* FieldModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34E21E212BD855A80077B237 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E222BD855BE0077B237 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		34E21E242BD85B330077B237 /* GameFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E252BD85B3E0077B237 /* View */,
+			);
+			path = GameFieldView;
+			sourceTree = "<group>";
+		};
+		34E21E252BD85B3E0077B237 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E262BD85B4D0077B237 /* GameFieldView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		34F91B4E2BD550F300CD0475 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +217,8 @@
 		34F91B592BD550F300CD0475 /* Test Task “Spectrum Swipe Circle” */ = {
 			isa = PBXGroup;
 			children = (
+				34E21E242BD85B330077B237 /* GameFieldView */,
+				34E21E142BD825FD0077B237 /* YouWinView */,
 				343800A72BD571BF003FD8E7 /* Test-Task--Spectrum-Swipe-Circle--Info.plist */,
 				34F91B682BD5535600CD0475 /* SplashView */,
 				343800982BD564E4003FD8E7 /* MainMenuView */,
@@ -264,9 +333,16 @@
 				3438009B2BD56502003FD8E7 /* MainMenuView.swift in Sources */,
 				343800B12BD593B0003FD8E7 /* SettingsView.swift in Sources */,
 				3438009E2BD567D9003FD8E7 /* Color+Extension.swift in Sources */,
+				34E21E172BD826190077B237 /* YouWinView.swift in Sources */,
 				343800A32BD57010003FD8E7 /* UIApplication+Extension.swift in Sources */,
+				34E21E1E2BD855530077B237 /* FieldSidesColorModel.swift in Sources */,
+				34E21E232BD855BE0077B237 /* GameViewModel.swift in Sources */,
+				34E21E1C2BD855300077B237 /* FieldColorsModel.swift in Sources */,
 				34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */,
+				34E21E1A2BD855000077B237 /* RubinModel.swift in Sources */,
+				34E21E202BD855700077B237 /* FieldModel.swift in Sources */,
 				343800972BD5572D003FD8E7 /* BackgroundView.swift in Sources */,
+				34E21E272BD85B4D0077B237 /* GameFieldView.swift in Sources */,
 				34F91B6B2BD5538100CD0475 /* SplashView.swift in Sources */,
 				343800AB2BD5746D003FD8E7 /* GameView.swift in Sources */,
 			);
