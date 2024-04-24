@@ -23,10 +23,12 @@ struct GameFieldView: View {
                     DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
                         .onChanged({ value in
                             offset = value.translation
+                            TapticFeedbackManager.shared.vibroEffect()
+                            
                         })
                         .onEnded { value in
                             print(value.translation)
-                            
+                            TapticFeedbackManager.shared.soundEffect()
                             DispatchQueue.main.async {
                                 let viewSize = proxy.size.width / 500 > 1 ? proxy.size.width / 1.8 : proxy.size.width / 1.1
                                 
@@ -62,7 +64,6 @@ struct GameFieldView: View {
                             }
                         }
                 )
-                .hapticFeedbackOnTap()
             
         }
         .onAppear{

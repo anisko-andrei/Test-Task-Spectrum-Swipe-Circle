@@ -3,6 +3,7 @@ import SwiftUI
 
 @main
 struct SpectrumSwipeCircleApp: App {
+    @AppStorage("soundIsOn") private var soundIsOn: Bool = true
     @State var isActive = true
     var body: some Scene {
         WindowGroup {
@@ -20,6 +21,19 @@ struct SpectrumSwipeCircleApp: App {
                 }
             }
             .statusBar(hidden: true)
+            .onAppear(perform: {
+                TapticFeedbackManager.shared.playGameSound()
+            })
+            .onChange(of: soundIsOn) {
+                if soundIsOn {
+                    TapticFeedbackManager.shared.playGameSound()
+                } else {
+                    TapticFeedbackManager.shared.gameAdioPlayer.stop()
+                }
+            }
+            .onDisappear{
+                TapticFeedbackManager.shared.gameAdioPlayer.stop()
+            }
         }
         
     }

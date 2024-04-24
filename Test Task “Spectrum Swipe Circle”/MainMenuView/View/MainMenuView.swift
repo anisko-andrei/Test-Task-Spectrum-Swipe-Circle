@@ -28,6 +28,7 @@ struct MainMenuView: View {
     
     var playNowButton: some View {
         Button(action: {
+            TapticFeedbackManager.shared.tapticEffect()
             playNow.toggle()
         }, label: {
             Rectangle()
@@ -60,6 +61,7 @@ struct MainMenuView: View {
     
     var privacyButton: some View {
         Button(action:{
+            TapticFeedbackManager.shared.tapticEffect()
             DispatchQueue.main.async {
                 let vc = SFSafariViewController(url: URL(string: "https://en.wikipedia.org/wiki/Privacy_policy")!)
                 UIApplication.shared.firstKeyWindow?.rootViewController?.present(vc, animated: true)

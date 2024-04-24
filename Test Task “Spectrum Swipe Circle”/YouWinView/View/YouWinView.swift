@@ -58,6 +58,7 @@ struct YouWinView : View {
                 }
                 HStack {
                     Button(action: {
+                        TapticFeedbackManager.shared.tapticEffect()
                        startNew()
                         isPresented.toggle()
                     }, label: {
@@ -74,6 +75,7 @@ struct YouWinView : View {
                     })
                   
                     Button(action: {
+                        TapticFeedbackManager.shared.tapticEffect()
                         dismiss()
                     }, label: {
                         ZStack {

@@ -78,6 +78,7 @@ class GameViewModel: ObservableObject {
             }
         }
     }
+    
     func checkColors(sideColor: FieldColors?) {
         if let rubin, rubin.color == sideColor {
             time = 2

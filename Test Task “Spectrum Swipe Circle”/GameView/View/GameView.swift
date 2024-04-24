@@ -42,6 +42,7 @@ struct GameView: View {
         VStack {
             HStack {
                 Button(action: {
+                    TapticFeedbackManager.shared.tapticEffect()
                     withAnimation(.easeIn(duration: 0.1)) {
                         vm.settingOpen.toggle()
                     }

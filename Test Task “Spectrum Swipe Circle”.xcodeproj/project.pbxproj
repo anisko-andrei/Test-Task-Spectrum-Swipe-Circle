@@ -22,6 +22,9 @@
 		34E21E202BD855700077B237 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E1F2BD855700077B237 /* FieldModel.swift */; };
 		34E21E232BD855BE0077B237 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E222BD855BE0077B237 /* GameViewModel.swift */; };
 		34E21E272BD85B4D0077B237 /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E262BD85B4D0077B237 /* GameFieldView.swift */; };
+		34E21E2A2BD9433A0077B237 /* TapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E292BD9433A0077B237 /* TapticFeedbackManager.swift */; };
+		34E21E2C2BD971F50077B237 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34E21E2B2BD971F40077B237 /* bounce.mp3 */; };
+		34E21E2E2BD9756D0077B237 /* gameSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34E21E2D2BD9756D0077B237 /* gameSound.mp3 */; };
 		34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */; };
 		34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B5E2BD550F600CD0475 /* Assets.xcassets */; };
 		34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B612BD550F600CD0475 /* Preview Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		34E21E1F2BD855700077B237 /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
 		34E21E222BD855BE0077B237 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		34E21E262BD85B4D0077B237 /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
+		34E21E292BD9433A0077B237 /* TapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticFeedbackManager.swift; sourceTree = "<group>"; };
+		34E21E2B2BD971F40077B237 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
+		34E21E2D2BD9756D0077B237 /* gameSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSound.mp3; sourceTree = "<group>"; };
 		34F91B572BD550F300CD0475 /* Test Task “Spectrum Swipe Circle”.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Task “Spectrum Swipe Circle”.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumSwipeCircleApp.swift; sourceTree = "<group>"; };
 		34F91B5E2BD550F600CD0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -198,6 +204,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		34E21E282BD9431A0077B237 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E2B2BD971F40077B237 /* bounce.mp3 */,
+				34E21E2D2BD9756D0077B237 /* gameSound.mp3 */,
+				34E21E292BD9433A0077B237 /* TapticFeedbackManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		34F91B4E2BD550F300CD0475 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +233,7 @@
 		34F91B592BD550F300CD0475 /* Test Task “Spectrum Swipe Circle” */ = {
 			isa = PBXGroup;
 			children = (
+				34E21E282BD9431A0077B237 /* Manager */,
 				34E21E242BD85B330077B237 /* GameFieldView */,
 				34E21E142BD825FD0077B237 /* YouWinView */,
 				343800A72BD571BF003FD8E7 /* Test-Task--Spectrum-Swipe-Circle--Info.plist */,
@@ -319,7 +336,9 @@
 				34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */,
 				343800A62BD57158003FD8E7 /* MultiroundPro.otf in Resources */,
 				34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */,
+				34E21E2C2BD971F50077B237 /* bounce.mp3 in Resources */,
 				343800AD2BD581A7003FD8E7 /* Muller-Medium.ttf in Resources */,
+				34E21E2E2BD9756D0077B237 /* gameSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +360,7 @@
 				34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */,
 				34E21E1A2BD855000077B237 /* RubinModel.swift in Sources */,
 				34E21E202BD855700077B237 /* FieldModel.swift in Sources */,
+				34E21E2A2BD9433A0077B237 /* TapticFeedbackManager.swift in Sources */,
 				343800972BD5572D003FD8E7 /* BackgroundView.swift in Sources */,
 				34E21E272BD85B4D0077B237 /* GameFieldView.swift in Sources */,
 				34F91B6B2BD5538100CD0475 /* SplashView.swift in Sources */,

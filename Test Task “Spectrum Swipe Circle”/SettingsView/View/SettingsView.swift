@@ -20,6 +20,7 @@ struct SettingsView: View {
             .opacity(0.7)
             .ignoresSafeArea()
             .onTapGesture {
+                TapticFeedbackManager.shared.tapticEffect()
                 withAnimation(.easeOut(duration: 0.1)){
                     isPresented.toggle()
                 }
@@ -105,6 +106,7 @@ struct SettingsView: View {
                 }
                 
                 Button(action: {
+                    TapticFeedbackManager.shared.tapticEffect()
                     dismiss()
                 }, label: {
                     ZStack {
