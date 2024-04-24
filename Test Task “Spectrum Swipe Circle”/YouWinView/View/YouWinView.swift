@@ -21,14 +21,9 @@ struct YouWinView : View {
             )
             .opacity(0.7)
             .ignoresSafeArea()
-            .onTapGesture {
-                withAnimation(.easeOut(duration: 0.1)){
-                    isPresented.toggle()
-                }
-            }
-            
+        
             VStack {
-                Image("youWin")
+                Image(currentScore < bestScore ? "tryNow" : "youWin")
                     .resizable()
                     .scaledToFit()
                     .frame(width: proxy.size.width/1.5, alignment: .center)
@@ -77,7 +72,7 @@ struct YouWinView : View {
                                 .foregroundStyle(Color(hex: "#FFFFFF"))
                         }
                     })
-                    
+                  
                     Button(action: {
                         dismiss()
                     }, label: {

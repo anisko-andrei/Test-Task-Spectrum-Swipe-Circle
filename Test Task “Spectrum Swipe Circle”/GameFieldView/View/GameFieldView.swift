@@ -55,21 +55,18 @@ struct GameFieldView: View {
                                         print("=(")
                                 }
                             
-                                vm.field = vm.fields.randomElement()
+                               
                                 withAnimation {
-                                    vm.rubin = vm.rubins.randomElement()
                                     self.offset = .zero
                                 }
                             }
                         }
                 )
+                .hapticFeedbackOnTap()
             
         }
         .onAppear{
-            DispatchQueue.main.async {
-                vm.field = vm.fields.randomElement()
-                vm.rubin = vm.rubins.randomElement()
-            }
+            vm.startNewGame()
         }
     }
 }

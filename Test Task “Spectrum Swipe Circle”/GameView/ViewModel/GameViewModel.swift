@@ -54,24 +54,62 @@ class GameViewModel: ObservableObject {
     
     @Published var currentScore: Int = 0
     
+    var timer: Timer?
+    var time = 2.0
+    
     func startNewGame() {
         DispatchQueue.main.async { [weak self] in
-            self?.currentScore = 0
+            guard let self else {return}
+            self.time = 2
+            self.startTimer()
+            self.currentScore = 0
+            self.field = self.fields.randomElement()
+            self.rubin = self.rubins.randomElement()
+            
+        }
+    }
+    
+    func startTimer() {
+        self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
+            self.time -= 0.1
+            print(self.time)
+            if self.time <= 0.0 {
+                self.stopGame()
+            }
         }
     }
     func checkColors(sideColor: FieldColors?) {
         if let rubin, rubin.color == sideColor {
+            time = 2
             print("OK")
             currentScore += 1
+            field = fields.randomElement()
+            self.rubin = rubins.randomElement()
         }
         else {
-            DispatchQueue.main.async { [weak self] in
-                self?.youWin.toggle()
-                if self?.bestScore ?? 0 < self?.currentScore ?? 0 {
-                    self?.bestScore = self?.currentScore ?? 0
-                }
+           stopGame()
+        }
+    }
+    
+    func stopGame() {
+        DispatchQueue.main.async { [weak self] in
+            self?.timer?.invalidate()
+            self?.timer = nil
+            
+            self?.youWin.toggle()
+            if self?.bestScore ?? 0 < self?.currentScore ?? 0 {
+                self?.bestScore = self?.currentScore ?? 0
             }
         }
     }
     
+    func pauseGame() {
+        if let timer  {
+            timer.invalidate()
+            self.timer = nil
+        } else {
+            startTimer()
+        }
+        
+    }
 }

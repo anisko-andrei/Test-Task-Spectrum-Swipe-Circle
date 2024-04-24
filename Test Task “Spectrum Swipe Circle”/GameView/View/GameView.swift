@@ -33,7 +33,9 @@ struct GameView: View {
             }
         }
         .statusBar(hidden: true)
-        
+        .onChange(of: vm.settingOpen) {
+            vm.pauseGame()
+        }
     }
     
     var settingsButton: some View {
