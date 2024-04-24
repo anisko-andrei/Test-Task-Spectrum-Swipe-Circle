@@ -5,6 +5,7 @@ import SwiftUI
 struct SpectrumSwipeCircleApp: App {
     @AppStorage("soundIsOn") private var soundIsOn: Bool = true
     @State var isActive = true
+    @State var showNotifications = false
     var body: some Scene {
         WindowGroup {
             ZStack {
@@ -18,6 +19,21 @@ struct SpectrumSwipeCircleApp: App {
                     
                 } else {
                     MainMenuView()
+                }
+            }
+            .fullScreenCover(isPresented: $showNotifications, content: {
+                NotificationView()
+            })
+            .onAppear{
+                UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+                    if settings.authorizationStatus == .authorized {
+                        showNotifications = false
+                    } else {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            showNotifications = true
+                        }
+                    }
+                   
                 }
             }
             .statusBar(hidden: true)

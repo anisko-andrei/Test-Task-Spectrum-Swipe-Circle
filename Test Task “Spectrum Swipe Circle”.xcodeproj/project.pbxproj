@@ -25,6 +25,8 @@
 		34E21E2A2BD9433A0077B237 /* TapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E292BD9433A0077B237 /* TapticFeedbackManager.swift */; };
 		34E21E2C2BD971F50077B237 /* bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34E21E2B2BD971F40077B237 /* bounce.mp3 */; };
 		34E21E2E2BD9756D0077B237 /* gameSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34E21E2D2BD9756D0077B237 /* gameSound.mp3 */; };
+		34E21E312BD97C1E0077B237 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E21E302BD97C1E0077B237 /* NotificationView.swift */; };
+		34E21E332BD97CC50077B237 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 34E21E322BD97CC50077B237 /* Inter.ttc */; };
 		34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */; };
 		34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B5E2BD550F600CD0475 /* Assets.xcassets */; };
 		34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F91B612BD550F600CD0475 /* Preview Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		34E21E292BD9433A0077B237 /* TapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticFeedbackManager.swift; sourceTree = "<group>"; };
 		34E21E2B2BD971F40077B237 /* bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce.mp3; sourceTree = "<group>"; };
 		34E21E2D2BD9756D0077B237 /* gameSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSound.mp3; sourceTree = "<group>"; };
+		34E21E302BD97C1E0077B237 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		34E21E322BD97CC50077B237 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttc; sourceTree = "<group>"; };
 		34F91B572BD550F300CD0475 /* Test Task “Spectrum Swipe Circle”.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Task “Spectrum Swipe Circle”.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F91B5A2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumSwipeCircleApp.swift; sourceTree = "<group>"; };
 		34F91B5E2BD550F600CD0475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		343800A42BD57143003FD8E7 /* AppFont */ = {
 			isa = PBXGroup;
 			children = (
+				34E21E322BD97CC50077B237 /* Inter.ttc */,
 				343800A52BD57158003FD8E7 /* MultiroundPro.otf */,
 				343800AC2BD581A7003FD8E7 /* Muller-Medium.ttf */,
 			);
@@ -214,6 +219,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		34E21E2F2BD97C060077B237 /* NotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				34E21E302BD97C1E0077B237 /* NotificationView.swift */,
+			);
+			path = NotificationView;
+			sourceTree = "<group>";
+		};
 		34F91B4E2BD550F300CD0475 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 		34F91B592BD550F300CD0475 /* Test Task “Spectrum Swipe Circle” */ = {
 			isa = PBXGroup;
 			children = (
+				34E21E2F2BD97C060077B237 /* NotificationView */,
 				34E21E282BD9431A0077B237 /* Manager */,
 				34E21E242BD85B330077B237 /* GameFieldView */,
 				34E21E142BD825FD0077B237 /* YouWinView */,
@@ -335,6 +349,7 @@
 			files = (
 				34F91B622BD550F600CD0475 /* Preview Assets.xcassets in Resources */,
 				343800A62BD57158003FD8E7 /* MultiroundPro.otf in Resources */,
+				34E21E332BD97CC50077B237 /* Inter.ttc in Resources */,
 				34F91B5F2BD550F600CD0475 /* Assets.xcassets in Resources */,
 				34E21E2C2BD971F50077B237 /* bounce.mp3 in Resources */,
 				343800AD2BD581A7003FD8E7 /* Muller-Medium.ttf in Resources */,
@@ -355,6 +370,7 @@
 				34E21E172BD826190077B237 /* YouWinView.swift in Sources */,
 				343800A32BD57010003FD8E7 /* UIApplication+Extension.swift in Sources */,
 				34E21E1E2BD855530077B237 /* FieldSidesColorModel.swift in Sources */,
+				34E21E312BD97C1E0077B237 /* NotificationView.swift in Sources */,
 				34E21E232BD855BE0077B237 /* GameViewModel.swift in Sources */,
 				34E21E1C2BD855300077B237 /* FieldColorsModel.swift in Sources */,
 				34F91B5B2BD550F300CD0475 /* SpectrumSwipeCircleApp.swift in Sources */,
